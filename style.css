@@ -3,7 +3,7 @@ Green: #54be90
 White: #ffffff
 Light grey: #ebebeb
 Text grey: #444444
-Dark grey: #  
+Dark grey: #232323
 */
 
 .html {
@@ -19,7 +19,7 @@ Dark grey: #
 }
 
 body {
-  font-family: "Alegraya sans", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   color: #444;
 }
 
@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.8rem;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -45,6 +45,7 @@ body {
   align-items: center;
   gap: 1rem;
   width: 20%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .header__logo-icon {
@@ -93,7 +94,7 @@ body {
   color: #fff;
   display: flex;
   justify-content: center;
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.8rem;
 }
 
 .hero__text {
@@ -119,7 +120,7 @@ h1 {
 
 .section-intro {
   width: 100%;
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.8rem;
 }
 
 .intro__text {
@@ -134,7 +135,7 @@ h1 {
 .section-process {
   background-color: #232323;
   color: #fff;
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.8em;
 }
 
 .process__container {
@@ -148,9 +149,11 @@ h1 {
 }
 
 .process__item {
-  width: 200px;
+  /* width: 200px; */
   padding: 2.4rem 1.2rem;
   position: relative;
+  /* flex: 0 1 200px; */
+  flex: 1 0 200px;
 }
 
 .process__circle {
@@ -172,6 +175,70 @@ h1 {
 
 .process__item p {
   line-height: 1.5;
+  text-align: justify;
 }
 
 /* ---------------------------- SECTION SKILLS ---------------------------- */
+
+/* ---------------------------- FOOTER ---------------------------- */
+
+.footer__container {
+  width: 90%;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+footer p {
+  color: #232323;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.footer__greet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  gap: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+  position: relative;
+}
+
+.greet__line {
+  width: 20%;
+  height: 5px;
+  background-color: #54be90;
+  /* position: absolute; */
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* .greet__line_right {
+  right: -12rem;
+}
+
+.greet__line_left {
+  left: -12rem;
+} */
+
+.footer__icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.8rem;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+
+.footer__icon-item {
+  width: 50px;
+  fill: #bcbcbc;
+}
+
+.footer__copyright {
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
