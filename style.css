@@ -5,3 +5,71 @@ Light grey: #ebebeb
 Text grey: #444444
 Dark grey: #232323
 */
+
+.html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Alegraya sans", sans-serif;
+}
+/* ---------------------------- HEADER ---------------------------- */
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 2rem;
+  width: 20%;
+}
+
+.header__logo-icon {
+  width: 3.5rem;
+}
+
+.header__logo-text {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.header__nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #444;
+  letter-spacing: -1px;
+  font-size: 1.2rem;
+}
+
+.header__nav-item {
+  text-decoration: none;
+  color: #ebebeb;
+  padding: 1.2rem 0;
+  flex: 1;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  /* align-self: center; */
+}
+
+.header__nav-item:hover {
+  background-color: #54be90;
+  color: #444;
+}
+
+/* ---------------------------- HERO SECTION ---------------------------- */
